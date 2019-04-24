@@ -1,0 +1,169 @@
+.searchComponentWrapper {
+    max-width: 100%;
+}
+
+.searchForm {
+    display: flex;
+    flex-direction: column;
+    background: rgb(236, 236, 236);
+    padding: 0.5rem;
+}
+
+.inputWrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem 0 0;
+    max-width: 100%;
+    background: white;
+    border: solid 1px rgb(184, 184, 184);
+}
+
+.searchInput {
+    font-size: 1rem;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+}
+
+.searchResultList {
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.searchResultListActive {
+    background: white;
+    padding: 0;
+    margin: 0.2rem 0 0 0;
+    font-size: 1rem;
+    border: solid 1px rgb(184, 184, 184);
+    list-style-type: none;
+    overflow: hidden;
+    max-height: 100%;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.searchListItem {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.searchListItem:hover {
+    background: rgb(175, 175, 175);
+    cursor: pointer;
+}
+
+.searchHistoryWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.searchHistoryHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textButtonClear {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline:none;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.searchHistoryList {
+    list-style-type: none;
+    padding: 0;
+    border-top: solid 1px rgb(184, 184, 184);
+}
+
+.searchHistoryListItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px rgb(184, 184, 184);
+    position: relative;
+}
+
+.listItemText {
+    font-weight: 600;
+}
+
+.noContentPlaceholder {
+    padding: 1rem 0 0 0;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+    color: rgb(119, 119, 119);
+}
+
+.buttonClear {
+    background: transparent;
+    border: none;
+    right: 0px;
+    top: 0px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    outline: none;
+  }
+
+  .buttonClear:hover {
+    cursor: pointer;
+  }
+
+  .buttonClear:after {
+    content: '';
+    display: inline-block;
+    align-content: center;
+    background-image: url(../../assets/img/icon-cross.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.2rem;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .btn {
+    display: inline-block;
+    background: #E6A85E;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border: 0.5px solid;
+    border-color: #82817F;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn:after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #FFF;
+    background-image: url(../../assets/img/icon-cross.png);    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100px;
+    margin-left: 0.5rem;
+}
+
+.btn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus {
+    outline: none;
+}
